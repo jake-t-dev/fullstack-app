@@ -16,9 +16,6 @@ RUN npm install --production
 # Copy the rest of the application code
 COPY . .
 
-# Make sure await-db.sh is executable
-RUN chmod +x /app/await-db.sh
-
 # Expose the port your app runs on
 EXPOSE 3000
 
