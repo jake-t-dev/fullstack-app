@@ -27,7 +27,8 @@ const Home = () => {
 
   useEffect(() => {
     getCreatureData();
-  }, [getCreatureData]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const sortedCreatures = useMemo(
     () =>
