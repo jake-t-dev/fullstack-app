@@ -18,7 +18,9 @@ client
         id SERIAL PRIMARY KEY,
         name TEXT NOT NULL,
         image TEXT,
-        initiative INTEGER
+        initiative INTEGER,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       );
     `);
     console.log("Connected to database and ensured users table exists");

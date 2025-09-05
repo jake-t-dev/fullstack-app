@@ -1,5 +1,5 @@
 export type Creature = {
-  id: number;
+  id?: number;
   name: string;
   image: string;
   initiative: number;
